@@ -1,4 +1,0 @@
-- library of published papers
-- faceted search
-- upload meta data to use as search
-- tick boxes

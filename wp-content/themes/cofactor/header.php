@@ -17,14 +17,26 @@
 	<!--[if lt IE 8]>
 	    <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
 	<![endif]-->
-
-	<div id="container">
-
-		<header>
-			<a id="logo" href="<?php echo home_url( '/' ); ?>"><?php bloginfo( 'name' ); ?></a>
-			<div class="description"><?php bloginfo( 'description' ); ?></div>
-		</header>
-
-		<nav>
-			<?php //wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
-		</nav>
+	       
+    <div class="topbar">
+        <div class="wrapper">
+            <ul class="social__media">
+                <li><a class="social__media--facebook" href="#"></a></li>
+                <li><a class="social__media--twitter" href="#"></a></li>
+                <li><a class="social__media--linkedin" href="#"></a></li>
+                <li><a class="social__media--google" href="#"></a></li>
+                <li><a class="social__media--phone" href="#"><img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/icons/phone.svg" alt="telephone"/><span>07982 722305</span></a></li>
+            </ul>
+            <p class="topbar--paypal">Pay <a href="#">here</a> via <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/icons/paypal.svg" alt="telephone"/></p>  
+        </div>
+    </div>
+	
+    <div class="container">     
+        <div class="wrapper">
+            <header>
+				<a class="header__logo" href="<?php echo home_url( '/' ); ?>"></a>
+				<nav>
+					<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+				</nav>
+            </header>
+        </div>

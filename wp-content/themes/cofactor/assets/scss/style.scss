@@ -10,6 +10,9 @@ Version: 1.0
 // Compass imports
 @import "compass";
 
+// Bourbon imports
+@import "bourbon/bourbon";
+
 // Reset, Variables, Mixins, Etc
 // DO NOT EDIT ORDER OF FILES
 @import "partials/mixins";
@@ -21,6 +24,8 @@ Version: 1.0
 
 // Page and Site Styles
 @import "partials/page";
+@import "partials/navigation";
+@import "partials/slider";
 @import "partials/posts";
 @import "partials/widgets";
 @import "partials/search";

@@ -1,0 +1,35 @@
+.slide {
+	width:100%;
+	display:inline-block;
+	text-align:center;
+}
+.cycle-pager {
+	position:absolute;
+	left:em(12);
+	bottom:em(22);
+	width:100%;
+	text-align:center;
+	z-index:200;
+	display:none;
+	visibility:hidden;
+	@include bp(tablet) {
+		display:block;
+		visibility:visible;
+	}
+	span {
+		display: inline-block;
+		width: 13px;
+		height: 13px;
+		background:none;
+		border:1px solid #fff;
+		text-indent:-9999px;
+		margin-right: 10px;
+		border-radius: 10px;
+		cursor:pointer;
+		&.cycle-pager-active,
+		&:hover {
+			background:#fff;
+			border:1px solid #fff;	
+		}
+	}
+}

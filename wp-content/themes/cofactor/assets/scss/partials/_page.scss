@@ -1,7 +1,9 @@
 /* GENERAL */
 body {
+	font-size:100%;
+	color:$brand-dark;
 	font-family: "source-sans-pro",sans-serif;
-	
+	background:$lightergrey;
 }
 
 a,
@@ -16,33 +18,136 @@ a:hover {
     background: $selectionColor;
     text-shadow: none;
 }
-
 ::selection {
     background: $selectionColor;
     text-shadow: none;
 }
 
-/* HEADINGS / TYPOGRAPHY */
+/* BASE SETTINGS */
 h1, h2, h3, h4 {
 	font-weight: normal;
 	margin: 0 0 10px 0;
 }
-h1 {
-font-size:em(100)
+img {
+	max-width:100%;
 }
-h2 { }
-h3 { }
-h4.widgettitle { }
 
 /* STRUCTURE */
-#container {
-	max-width: $pageWidth;
-	margin: 20px auto;
+.wrapper {
+	width:98%;
+	margin:0 auto;
+	 @include bp(desktop) {
+		 width: $pageWidth;
+	 }
+}
+.container {
+	width:100%;
+	display:inline-block;
+	background:#fff;
 }
 
 /* HEADER */
-header { }
-#logo { }
+.topbar {
+	.social__media {
+		display:inline-block;
+		list-style-type:none;
+		margin:0;
+		padding-left:0;
+		li {
+			position:relative;
+			float:left;
+			min-width:14px;
+			min-height:24px;
+			background:url(#{$assetPath}/topbar-divider.svg) no-repeat top right;
+			a {
+				float:left;
+				
+				margin:0 em(20);
+				&.social__media--facebook {
+					width:9px;
+					height:18px;
+					margin-top:7px;
+					background:url(#{$assetPath}/icons/facebook.svg) no-repeat bottom left;
+					&:hover {
+						background:url(#{$assetPath}/icons/facebook-hover.svg) no-repeat bottom left;
+					}
+				}
+				&.social__media--twitter {
+					width:14px;
+					height:18px;
+					margin-top:9px;
+					background:url(#{$assetPath}/icons/twitter.svg) no-repeat bottom left;
+					&:hover {
+						background:url(#{$assetPath}/icons/twitter-hover.svg) no-repeat bottom left;
+					}
+				}
+				&.social__media--linkedin {
+					width:12px;
+					height:12px;
+					margin-top:12px;
+					background:url(#{$assetPath}/icons/linkedin.svg) no-repeat top left;
+					&:hover {
+						background:url(#{$assetPath}/icons/linkedin-hover.svg) no-repeat top left;
+					}
+				}
+				&.social__media--google {
+					width:12px;
+					height:12px;
+					margin-top:12px;
+					background:url(#{$assetPath}/icons/googleplus.svg) no-repeat top left;
+					&:hover {
+						background:url(#{$assetPath}/icons/googleplus-hover.svg) no-repeat top left;
+					}
+				}
+				&.social__media--phone {
+					margin-top:8px;
+					font-size:em(14);
+					padding-left:12px;
+					line-height:18px;
+					text-decoration:none;
+					img {
+						float:left;
+						width:6px;
+						height:13px;
+						margin-top:2px;
+						margin-right:9px;
+					}
+					span {
+						float:left;
+					}
+				}
+			}
+		}
+	}
+}
+
+.topbar .topbar--paypal {
+	float:right;
+	display:inline-block;
+	margin:em(6) 0 0 0;
+	img {
+		width:64px;
+		height:18px;
+		margin-left:em(8);
+	}
+}
+
+header { 
+	width:100%;
+	padding:em(30) 0 em(37) 0;
+	display:inline-block;
+	.header__logo { 
+		width:174px;
+		min-height:68px;
+		display:block;
+		margin:0 auto;
+		background:url(#{$assetPath}/cofactor-logo.svg) no-repeat top left;
+		@include bp(desktop) {
+			float:left;
+		}
+	}
+}
+
 
 /* NAV */
 nav { }

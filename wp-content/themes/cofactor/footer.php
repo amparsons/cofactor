@@ -1,9 +1,10 @@
-		<footer>
-			<?php dynamic_sidebar( 'Footer' ); ?>
-			<p>&copy; <?php echo date( "Y" ); echo " "; bloginfo( 'name' ); ?></p>
-		</footer>
+            <footer>
+                <?php dynamic_sidebar( 'Footer' ); ?>
+                <p>&copy; <?php echo date( "Y" ); echo " "; bloginfo( 'name' ); ?></p>
+            </footer>
+		</div> <!-- /.wrapper -->
 
-	</div> <!-- /#container -->
+	</div> <!-- /.container -->
 
   <?php wp_footer(); ?>
 

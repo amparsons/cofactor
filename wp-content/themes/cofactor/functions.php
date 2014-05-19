@@ -7,7 +7,6 @@ Theme Setup
 require_once( get_template_directory() . '/assets/theme-helpers/init.php' );
 require_once( get_template_directory() . '/assets/theme-helpers/theme-helpers.php' );
 require_once( get_template_directory() . '/assets/theme-helpers/theme-functions.php' );
-require_once( get_template_directory() . '/assets/theme-helpers/theme-comments.php' );
 
 
 /****************************************
@@ -28,7 +27,7 @@ Misc Theme Functions
  * Define custom post type capabilities for use with Members
  */
 function mb_add_post_type_caps() {
-	// mb_add_capabilities( 'portfolio' );
+	//mb_add_capabilities( 'portfolio' );
 }
 
 /**

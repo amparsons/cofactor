@@ -30,9 +30,6 @@ function mb_setup() {
 	// Add Editor Style
 	add_editor_style( 'editor-style.css' );
 
-	// Don't update theme
-	add_filter( 'http_request_args', 'mb_dont_update_theme', 5, 2 );
-
 	// Prevent File Modifications
 	define ( 'DISALLOW_FILE_EDIT', true );
 

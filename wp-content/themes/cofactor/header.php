@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
 	<link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/favicon.ico" type="image/x-icon" />
 	<link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/favicon.png" />
+    
+    <script type="text/javascript" src="//use.typekit.net/drr6tep.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 	<?php wp_head(); ?>
 </head>
 

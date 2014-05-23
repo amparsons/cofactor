@@ -6,7 +6,7 @@
 .cycle-pager {
 	position:absolute;
 	left:em(12);
-	bottom:em(22);
+	bottom:em(10);
 	width:100%;
 	text-align:center;
 	z-index:200;
@@ -15,6 +15,9 @@
 	@include bp(tablet) {
 		display:block;
 		visibility:visible;
+	}
+	@include bp(desktop) {
+		bottom:em(22);
 	}
 	span {
 		display: inline-block;

@@ -9,9 +9,24 @@
 	@if $point == tablet {
 		@media (min-width : 768px) { @content; }
 	}
+	@if $point == smalltablet {
+		@media (min-width : 400px) { @content; }
+	}
 	@else if $point == phone {
 		@media (min-width : 300px) { @content; }
 	}
+}
+
+/*
+ * Mixin for vertical aligning text
+ * @include vertical-align;
+*/
+@mixin vertical-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 /*

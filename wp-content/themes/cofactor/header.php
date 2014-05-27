@@ -21,11 +21,11 @@
     <div class="topbar">
         <div class="wrapper">
             <ul class="social__media">
-                <li><a class="social__media--facebook" href="#"></a></li>
-                <li><a class="social__media--twitter" href="#"></a></li>
-                <li><a class="social__media--linkedin" href="#"></a></li>
-                <li><a class="social__media--google" href="#"></a></li>
-                <li><a class="social__media--phone" href="#"><img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/icons/phone.svg" alt="telephone"/><span>07982 722305</span></a></li>
+                <?php if( get_field('facebook_link', 5) ): ?><li><a class="social__media--facebook" href="<?php the_field('facebook_link', 5); ?>"></a></li><?php endif; ?>
+                <?php if( get_field('twitter_link', 5) ): ?><li><a class="social__media--twitter" href="<?php the_field('twitter_link', 5); ?>"></a></li><?php endif; ?>
+                <?php if( get_field('linkedin_link', 5) ): ?><li><a class="social__media--linkedin" href="<?php the_field('linkedin_link', 5); ?>"></a></li><?php endif; ?>
+                <?php if( get_field('google_plus_link', 5) ): ?><li><a class="social__media--google" href="<?php the_field('google_plus_link', 5); ?>"></a></li><?php endif; ?>
+                <?php if( get_field('phone_number', 5) ): ?><li><a class="social__media--phone" href="#"><img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/icons/phone.svg" alt="telephone"/><span><?php the_field('phone_number', 5); ?></span></a></li><?php endif; ?>
             </ul>
             <p class="topbar--paypal">Pay <a href="#">here</a> via <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/icons/paypal.svg" alt="telephone"/></p>  
         </div>

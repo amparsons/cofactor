@@ -1,13 +1,40 @@
 nav ul {
 	list-style-type:none;
 	padding:0;
+	margin-top:em(26);
+	@include bp(desktop) {
+		float:right;
+	}
 	li {
 		display:inline;
+		border-right:1px solid #C7C6C6;
 		a {
 			display:inline-block;
 			text-decoration:none;
 			font-size:em(20);
-			padding:0 em(16);
+			margin:0 em(10);
+			border-bottom:1px solid #fff;
+			@include bp(desktop) {
+				margin:0 em(16);
+			}
+			&:hover {
+				color:$coltwo;
+				border-bottom:1px solid $coltwo;
+			}
+			@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:landscape) {
+				margin:0 em(10);
+			}
+		}
+		&.current_page_item a,
+		&.current-page-ancestor a {
+			color:$coltwo;
+			border-bottom:1px solid $coltwo;
+		}
+		&:last-child {
+			border:none;
+			a {
+				margin-right:0;
+			}
 		}
 	}
 }

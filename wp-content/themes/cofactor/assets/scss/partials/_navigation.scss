@@ -12,6 +12,7 @@ nav ul {
 			display:inline-block;
 			text-decoration:none;
 			font-size:em(20);
+<<<<<<< HEAD
 			margin:0 em(10);
 			border-bottom:1px solid #fff;
 			@include bp(desktop) {
@@ -29,11 +30,21 @@ nav ul {
 		&.current-page-ancestor a {
 			color:$coltwo;
 			border-bottom:1px solid $coltwo;
+=======
+			padding:0 em(14);
+			@include bp(desktop) {
+				padding:0 em(16);
+			}
+>>>>>>> FETCH_HEAD
 		}
 		&:last-child {
 			border:none;
 			a {
+<<<<<<< HEAD
 				margin-right:0;
+=======
+				padding-right:0;
+>>>>>>> FETCH_HEAD
 			}
 		}
 	}

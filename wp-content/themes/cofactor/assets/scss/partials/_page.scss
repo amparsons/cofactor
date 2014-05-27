@@ -35,9 +35,13 @@ img {
 .colone {
 	color:$colone;
 }
+<<<<<<< HEAD
 .coltwo {
 	color:$coltwo;
 }
+=======
+.coltwo,
+>>>>>>> FETCH_HEAD
 .coltwo.bottom {
 	color:$coltwo;
 	text-decoration:underline;
@@ -62,6 +66,7 @@ a.content__link {
 	}
 }
 .follow {
+<<<<<<< HEAD
 	
 	width:100%;
 	display:block;
@@ -75,17 +80,36 @@ a.content__link {
 		bottom:0;
 		width:auto;
 		margin:0;		
+=======
+	position:absolute;
+	right:0;
+	bottom:0;
+	width:100%;
+	display:block;
+	margin:0;
+	padding:em(11) em(14) em(7) em(14);
+	text-decoration:none;
+	background:#DEDDDD;
+	@include bp(tablet) {
+		width:auto;		
+>>>>>>> FETCH_HEAD
 	}
 	span {
 		font-weight:700;
 	}
 }
 
+<<<<<<< HEAD
 @include bp(tablet) {
 	.bottom {
 		position:absolute;
 		bottom:-5px;
 	}			
+=======
+.bottom {
+	position:absolute;
+	bottom:-5px;
+>>>>>>> FETCH_HEAD
 }
 
 /* STRUCTURE */
@@ -169,6 +193,7 @@ a.content__link {
 				background:url(#{$assetPath}/icons/linkedin.svg) no-repeat top left;
 				&:hover {
 					background:url(#{$assetPath}/icons/linkedin-hover.svg) no-repeat top left;
+<<<<<<< HEAD
 				}
 			}
 			&.social__media--google {
@@ -180,6 +205,19 @@ a.content__link {
 					background:url(#{$assetPath}/icons/googleplus-hover.svg) no-repeat top left;
 				}
 			}
+=======
+				}
+			}
+			&.social__media--google {
+				width:12px;
+				height:12px;
+				margin-top:12px;
+				background:url(#{$assetPath}/icons/googleplus.svg) no-repeat top left;
+				&:hover {
+					background:url(#{$assetPath}/icons/googleplus-hover.svg) no-repeat top left;
+				}
+			}
+>>>>>>> FETCH_HEAD
 			&.social__media--phone {
 				display:none;
 				margin-top:8px;
@@ -206,6 +244,7 @@ a.content__link {
 
 .social__media--footer {
 	position:absolute;
+<<<<<<< HEAD
 	top:em(100);
 	left:0;
 	display:none;
@@ -216,6 +255,12 @@ a.content__link {
 	}
 	li {
 		float:right;
+=======
+	top:em(59);
+	right:0;
+	li {
+		float:left;
+>>>>>>> FETCH_HEAD
 		border-right:1px solid $lightgrey;
 		a {
 			display: block;
@@ -238,7 +283,10 @@ a.content__link {
 				}
 			}
 			&.social__media--linkedin {
+<<<<<<< HEAD
 				margin-left:em(12);
+=======
+>>>>>>> FETCH_HEAD
 				background:url(#{$assetPath}/icons/linkedin.svg) no-repeat center center;
 				&:hover {
 					background:url(#{$assetPath}/icons/linkedin-hover.svg) no-repeat center center;
@@ -252,7 +300,11 @@ a.content__link {
 				}
 			}
 		}
+<<<<<<< HEAD
 		&:first-child {
+=======
+		&:last-child {
+>>>>>>> FETCH_HEAD
 			border:none;
 			a {
 				padding-right:0;
@@ -270,7 +322,10 @@ a.content__link {
 	}
 	img {
 		width:64px;
+<<<<<<< HEAD
 		height:22px;
+=======
+>>>>>>> FETCH_HEAD
 		margin-left:em(8);
 	}
 }
@@ -294,7 +349,22 @@ header {
 	}
 }
 
+section#main {
+	h1 {
+		width:100%;
+		font-size:em(24);
+		text-align:center;
+		margin:em(20) auto em(9) auto;
+		@include bp(tablet) {
+			width:90.425531914894%; /* 850 / 940 */
+		}
+		@include bp(desktop) {
+			margin:em(40) auto em(9) auto;
+		}
+	}
+}
 
+<<<<<<< HEAD
 h1 {
 	width:100%;
 	font-size:em(24);
@@ -309,6 +379,8 @@ h1 {
 }
 
 
+=======
+>>>>>>> FETCH_HEAD
 .feature__boxes {
 	width:100%;
 	display:inline-block;
@@ -345,7 +417,10 @@ section#main .feature__boxes article {
 		figure {
 			position:relative;
 			margin-bottom:em(24);
+<<<<<<< HEAD
 			background:#c5c5c5;
+=======
+>>>>>>> FETCH_HEAD
 			figcaption {
 				position:absolute;
 				left:0;
@@ -381,6 +456,7 @@ section#main .feature__boxes article {
 		}
 	}
 }
+<<<<<<< HEAD
 
 section#main .feature__boxes article.feature__boxes--colone {
 	background:$colone;
@@ -763,6 +839,37 @@ section.page__section.page__section--four {
 		margin-bottom:em(25);
 	}
 }
+=======
+
+section#main .feature__boxes article.feature__boxes--colone {
+	background:$colone;
+	figcaption {
+		background:$colone;
+	}
+	span {
+		background:$colonedark;
+	}
+}
+section#main .feature__boxes article.feature__boxes--coltwo {
+	background:$coltwo;
+	figcaption {
+		background:$coltwo;
+	}
+	span {
+		background:$coltwodark;
+	}
+}
+section#main .feature__boxes article.feature__boxes--colthree {
+	background:$colthree;
+	figcaption {
+		background:$colthree;
+	}
+	span {
+		background:$colthreedark;
+	}
+}
+
+>>>>>>> FETCH_HEAD
 
 
 /* FOOTER */
@@ -770,7 +877,11 @@ footer {
 	float:left;
 	width:100%;
 	background:$lightergrey;
+<<<<<<< HEAD
 	padding:em(20) 0;
+=======
+	padding:em(40) 0;
+>>>>>>> FETCH_HEAD
 	.footer__col {
 		position:relative;
 		float:left;
@@ -778,7 +889,10 @@ footer {
 		padding-bottom:em(46);
 		@include bp(tablet) {
 			width:31.91489361702133%;	
+<<<<<<< HEAD
 			padding:em(40) 0;
+=======
+>>>>>>> FETCH_HEAD
 		}
 	}
 	ul {
@@ -804,6 +918,7 @@ footer {
 }
 .footer__col {
 	position:relative;
+<<<<<<< HEAD
 	margin-bottom:em(20);
 	@include bp(tablet) {
 		margin-bottom:0;		
@@ -812,6 +927,11 @@ footer {
 		font-size:em(20);
 		margin:0;
 		text-align:left;
+=======
+	h1 {
+		font-size:em(20);
+		margin:0;
+>>>>>>> FETCH_HEAD
 	}
 	h2 {
 		font-size:em(14);
@@ -828,7 +948,11 @@ footer {
 }
 .contact__details {
 	width:100%;
+<<<<<<< HEAD
 	@include bp(desktop) {
+=======
+	@include bp(tablet) {
+>>>>>>> FETCH_HEAD
 		float:right;
 		width:41%;
 		margin-top:em(65);		
@@ -838,6 +962,7 @@ footer {
 		font-weight:700;
 	}
 }
+<<<<<<< HEAD
 .contact__details--desktop {
 	display:none;
 	@include bp(desktop) {
@@ -869,6 +994,18 @@ footer {
 		color:#A3A0A0;
 		padding:0;
 		margin:0;
+=======
+.copy {
+	float:left;
+	p {
+		color:#A3A0A0;
+	}
+}
+.credit {
+	float:right;
+	p, p a {
+		color:#A3A0A0;
+>>>>>>> FETCH_HEAD
 	}
 }
 

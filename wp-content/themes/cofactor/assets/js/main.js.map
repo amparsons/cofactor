@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 {"version":3,"file":"assets/js/main.min.js","sources":["source/main.js"],"names":["$","meanmenu","jQuery"],"mappings":"CAAA,SAAUA,GACTA,EAAE,cAAcC,YAEdC"}
+=======
+{"version":3,"file":"assets/js/main.min.js","sources":["source/main.js"],"names":["$","meanmenu","jQuery"],"mappings":"CAAA,SAAUA,GACTA,EAAE,cAAcC,YACdC"}
+>>>>>>> FETCH_HEAD

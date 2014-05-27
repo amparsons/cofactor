@@ -13,6 +13,7 @@ nav ul {
 			text-decoration:none;
 			font-size:em(20);
 <<<<<<< HEAD
+<<<<<<< HEAD
 			margin:0 em(10);
 			border-bottom:1px solid #fff;
 			@include bp(desktop) {
@@ -31,17 +32,26 @@ nav ul {
 			color:$coltwo;
 			border-bottom:1px solid $coltwo;
 =======
+=======
+>>>>>>> FETCH_HEAD
 			padding:0 em(14);
 			@include bp(desktop) {
 				padding:0 em(16);
 			}
+<<<<<<< HEAD
+>>>>>>> FETCH_HEAD
+=======
 >>>>>>> FETCH_HEAD
 		}
 		&:last-child {
 			border:none;
 			a {
 <<<<<<< HEAD
+<<<<<<< HEAD
 				margin-right:0;
+=======
+				padding-right:0;
+>>>>>>> FETCH_HEAD
 =======
 				padding-right:0;
 >>>>>>> FETCH_HEAD

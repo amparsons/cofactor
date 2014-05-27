@@ -3,6 +3,7 @@
             <div class="footer__col">
 				<h1>Latest from Twitter</h1>
 <<<<<<< HEAD
+<<<<<<< HEAD
               <?php
 				require_once('Creare_Twitter.php');
 				
@@ -51,10 +52,15 @@
             	<a class="colone bottom" href="https://twitter.com/cofactorsci" target="_blank">SEE ALL TWEETS <span>+</span></a>
 				<a class="follow" href="https://twitter.com/cofactorsci" target="_blank">FOLLOW <span>+</span></a>
 =======
+=======
+>>>>>>> FETCH_HEAD
 				<h2>3 days ago</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.</p>
             	<a class="colone bottom" href="#">SEE ALL TWEETS <span>+</span></a>
 				<a class="follow" href="#">FOLLOW <span>+</span></a>
+<<<<<<< HEAD
+>>>>>>> FETCH_HEAD
+=======
 >>>>>>> FETCH_HEAD
             </div>
             <div class="footer__col footer__col--middle">
@@ -68,6 +74,7 @@
             <div class="footer__col">
                 <h1>Quicklinks</h1>
                 <h2>A quicker way to navigate the site</h2>
+<<<<<<< HEAD
 <<<<<<< HEAD
                 <div class="contact__details contact__details--desktop">
                 	<?php if( get_field('phone_number', 5) ): ?><p>Or get in touch<br>and call me on:<br><span><?php the_field('phone_number', 5); ?></span></p><?php endif; ?>
@@ -88,6 +95,8 @@
                 </ul>
                
 =======
+=======
+>>>>>>> FETCH_HEAD
                 <div class="contact__details">
                 	<p>Or get in touch<br>and call me on:<br><span>07982 722305</span></p>
                 </div>
@@ -105,6 +114,9 @@
                     <li><a class="social__media--linkedin" href="#"></a></li>
                     <li><a class="social__media--google" href="#"></a></li>
                 </ul>
+<<<<<<< HEAD
+>>>>>>> FETCH_HEAD
+=======
 >>>>>>> FETCH_HEAD
             </div>
         </div>    

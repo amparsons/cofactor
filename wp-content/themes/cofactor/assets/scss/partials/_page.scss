@@ -36,9 +36,13 @@ img {
 	color:$colone;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 .coltwo {
 	color:$coltwo;
 }
+=======
+.coltwo,
+>>>>>>> FETCH_HEAD
 =======
 .coltwo,
 >>>>>>> FETCH_HEAD
@@ -67,6 +71,7 @@ a.content__link {
 }
 .follow {
 <<<<<<< HEAD
+<<<<<<< HEAD
 	
 	width:100%;
 	display:block;
@@ -81,6 +86,8 @@ a.content__link {
 		width:auto;
 		margin:0;		
 =======
+=======
+>>>>>>> FETCH_HEAD
 	position:absolute;
 	right:0;
 	bottom:0;
@@ -92,6 +99,9 @@ a.content__link {
 	background:#DEDDDD;
 	@include bp(tablet) {
 		width:auto;		
+<<<<<<< HEAD
+>>>>>>> FETCH_HEAD
+=======
 >>>>>>> FETCH_HEAD
 	}
 	span {
@@ -100,11 +110,17 @@ a.content__link {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 @include bp(tablet) {
 	.bottom {
 		position:absolute;
 		bottom:-5px;
 	}			
+=======
+.bottom {
+	position:absolute;
+	bottom:-5px;
+>>>>>>> FETCH_HEAD
 =======
 .bottom {
 	position:absolute;
@@ -175,6 +191,7 @@ a.content__link {
 				background:url(#{$assetPath}/icons/facebook.svg) no-repeat bottom left;
 				&:hover {
 					background:url(#{$assetPath}/icons/facebook-hover.svg) no-repeat bottom left;
+<<<<<<< HEAD
 				}
 			}
 			&.social__media--twitter {
@@ -236,7 +253,106 @@ a.content__link {
 				}
 				span {
 					float:left;
+=======
 				}
+			}
+			&.social__media--twitter {
+				width:14px;
+				height:18px;
+				margin-top:9px;
+				background:url(#{$assetPath}/icons/twitter.svg) no-repeat bottom left;
+				&:hover {
+					background:url(#{$assetPath}/icons/twitter-hover.svg) no-repeat bottom left;
+				}
+			}
+			&.social__media--linkedin {
+				width:12px;
+				height:12px;
+				margin-top:12px;
+				background:url(#{$assetPath}/icons/linkedin.svg) no-repeat top left;
+				&:hover {
+					background:url(#{$assetPath}/icons/linkedin-hover.svg) no-repeat top left;
+				}
+			}
+			&.social__media--google {
+				width:12px;
+				height:12px;
+				margin-top:12px;
+				background:url(#{$assetPath}/icons/googleplus.svg) no-repeat top left;
+				&:hover {
+					background:url(#{$assetPath}/icons/googleplus-hover.svg) no-repeat top left;
+				}
+			}
+			&.social__media--phone {
+				display:none;
+				margin-top:8px;
+				font-size:em(14);
+				line-height:18px;
+				text-decoration:none;
+				@include bp(desktop) {
+					display:inline-block;
+				}
+				img {
+					float:left;
+					width:6px;
+					height:13px;
+					margin-top:2px;
+					margin-right:9px;
+				}
+				span {
+					float:left;
+				}
+			}
+		}
+	}
+}
+
+.social__media--footer {
+	position:absolute;
+	top:em(59);
+	right:0;
+	li {
+		float:left;
+		border-right:1px solid $lightgrey;
+		a {
+			display: block;
+			width:18px;
+			height:15px;
+			padding:0 em(20);
+			margin:em(10) 0;
+			vertical-align: middle;
+			line-height: 35px;
+			&.social__media--facebook {
+				background:url(#{$assetPath}/icons/facebook.svg) no-repeat center center;
+				&:hover {
+					background:url(#{$assetPath}/icons/facebook-hover.svg) no-repeat center center;
+				}
+			}
+			&.social__media--twitter {
+				background:url(#{$assetPath}/icons/twitter.svg) no-repeat center center;
+				&:hover {
+					background:url(#{$assetPath}/icons/twitter-hover.svg) no-repeat center center;
+				}
+			}
+			&.social__media--linkedin {
+				background:url(#{$assetPath}/icons/linkedin.svg) no-repeat center center;
+				&:hover {
+					background:url(#{$assetPath}/icons/linkedin-hover.svg) no-repeat center center;
+				}
+			}
+			&.social__media--google {
+				margin-left:em(12);
+				background:url(#{$assetPath}/icons/googleplus.svg) no-repeat center center;
+				&:hover {
+					background:url(#{$assetPath}/icons/googleplus-hover.svg) no-repeat center center;
+>>>>>>> FETCH_HEAD
+				}
+			}
+		}
+		&:last-child {
+			border:none;
+			a {
+				padding-right:0;
 			}
 		}
 	}
@@ -323,7 +439,10 @@ a.content__link {
 	img {
 		width:64px;
 <<<<<<< HEAD
+<<<<<<< HEAD
 		height:22px;
+=======
+>>>>>>> FETCH_HEAD
 =======
 >>>>>>> FETCH_HEAD
 		margin-left:em(8);
@@ -363,6 +482,7 @@ section#main {
 		}
 	}
 }
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 h1 {
@@ -380,6 +500,9 @@ h1 {
 
 
 =======
+>>>>>>> FETCH_HEAD
+=======
+
 >>>>>>> FETCH_HEAD
 .feature__boxes {
 	width:100%;
@@ -408,6 +531,7 @@ h1 {
 		}
 	}
 }
+<<<<<<< HEAD
 
 section#main .feature__boxes article {
 	position:relative;
@@ -870,6 +994,81 @@ section#main .feature__boxes article.feature__boxes--colthree {
 }
 
 >>>>>>> FETCH_HEAD
+=======
+
+section#main .feature__boxes article {
+	position:relative;
+	padding-bottom:em(72);
+	a {
+		text-decoration:none;
+		figure {
+			position:relative;
+			margin-bottom:em(24);
+			figcaption {
+				position:absolute;
+				left:0;
+				bottom:0;
+				color:#fff;
+				font-size:em(20);
+				font-weight:400;
+				padding:em(8) em(16) em(8) em(16);
+				text-transform:uppercase;
+			}
+		}
+		h1 {
+			margin:0;
+			color:#fff;
+			text-align:left;
+			font-size:em(19);
+			line-height:23px;
+			font-weight:700;
+			padding:0 em(16);
+		}
+		p {
+			color:#fff;
+			padding:0 em(16);
+			margin:em(16) 0 0 0;
+		}
+		span {
+			position:absolute;
+			right:0;
+			bottom:0;
+			color:#fff;
+			padding:em(10) em(12);
+			text-transform:uppercase;
+		}
+	}
+}
+
+section#main .feature__boxes article.feature__boxes--colone {
+	background:$colone;
+	figcaption {
+		background:$colone;
+	}
+	span {
+		background:$colonedark;
+	}
+}
+section#main .feature__boxes article.feature__boxes--coltwo {
+	background:$coltwo;
+	figcaption {
+		background:$coltwo;
+	}
+	span {
+		background:$coltwodark;
+	}
+}
+section#main .feature__boxes article.feature__boxes--colthree {
+	background:$colthree;
+	figcaption {
+		background:$colthree;
+	}
+	span {
+		background:$colthreedark;
+	}
+}
+
+>>>>>>> FETCH_HEAD
 
 
 /* FOOTER */
@@ -878,7 +1077,11 @@ footer {
 	width:100%;
 	background:$lightergrey;
 <<<<<<< HEAD
+<<<<<<< HEAD
 	padding:em(20) 0;
+=======
+	padding:em(40) 0;
+>>>>>>> FETCH_HEAD
 =======
 	padding:em(40) 0;
 >>>>>>> FETCH_HEAD
@@ -890,7 +1093,10 @@ footer {
 		@include bp(tablet) {
 			width:31.91489361702133%;	
 <<<<<<< HEAD
+<<<<<<< HEAD
 			padding:em(40) 0;
+=======
+>>>>>>> FETCH_HEAD
 =======
 >>>>>>> FETCH_HEAD
 		}
@@ -919,6 +1125,7 @@ footer {
 .footer__col {
 	position:relative;
 <<<<<<< HEAD
+<<<<<<< HEAD
 	margin-bottom:em(20);
 	@include bp(tablet) {
 		margin-bottom:0;		
@@ -927,6 +1134,11 @@ footer {
 		font-size:em(20);
 		margin:0;
 		text-align:left;
+=======
+	h1 {
+		font-size:em(20);
+		margin:0;
+>>>>>>> FETCH_HEAD
 =======
 	h1 {
 		font-size:em(20);
@@ -949,7 +1161,11 @@ footer {
 .contact__details {
 	width:100%;
 <<<<<<< HEAD
+<<<<<<< HEAD
 	@include bp(desktop) {
+=======
+	@include bp(tablet) {
+>>>>>>> FETCH_HEAD
 =======
 	@include bp(tablet) {
 >>>>>>> FETCH_HEAD
@@ -962,6 +1178,7 @@ footer {
 		font-weight:700;
 	}
 }
+<<<<<<< HEAD
 <<<<<<< HEAD
 .contact__details--desktop {
 	display:none;
@@ -995,6 +1212,8 @@ footer {
 		padding:0;
 		margin:0;
 =======
+=======
+>>>>>>> FETCH_HEAD
 .copy {
 	float:left;
 	p {
@@ -1005,6 +1224,9 @@ footer {
 	float:right;
 	p, p a {
 		color:#A3A0A0;
+<<<<<<< HEAD
+>>>>>>> FETCH_HEAD
+=======
 >>>>>>> FETCH_HEAD
 	}
 }

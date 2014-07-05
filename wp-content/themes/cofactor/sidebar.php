@@ -1,4 +1,9 @@
 <aside>
+	<div class="search-posts">
+    	<h2>Search Blog</h2>
+    	 <?php get_search_form(); ?> 
+    </div>
+    
     <h2>Recent Posts</h2>
     <ul class="fullwidth">
         <?php
@@ -24,9 +29,5 @@
     <div class="tags">
         <?php wp_tag_cloud(); ?>
     </div> 
-    
-    <div class="search-posts">
-    	<h2>Search Blog</h2>
-    	 <?php get_search_form(); ?> 
-    </div>
+
 </aside>

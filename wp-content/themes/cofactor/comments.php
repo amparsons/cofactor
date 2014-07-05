@@ -21,14 +21,14 @@
 	<?php if ( have_comments() ) : ?>
 		<h2 class="comments-title">
 			<?php
-				printf( _n( 'One thought on &ldquo;%2$s&rdquo;', '%1$s thoughts on &ldquo;%2$s&rdquo;', get_comments_number(), '_mbbasetheme' ),
+				printf( _n( 'Comments on &ldquo;%2$s&rdquo;', '%1$s Comments on &ldquo;%2$s&rdquo;', get_comments_number(), '_mbbasetheme' ),
 					number_format_i18n( get_comments_number() ), '<span>' . get_the_title() . '</span>' );
 			?>
 		</h2>
 
-		<ol class="commentlist">
-			<?php wp_list_comments( array( 'callback' => '_mbbasetheme_comment' ) ); ?>
-		</ol><!-- .commentlist -->
+		<div class="comment-list">
+			<?php wp_list_comments( array( 'style' => 'div' ) ); ?>
+        </div>
 
 		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // are there comments to navigate through ?>
 		<div role="navigation" id="comment-nav-below" class="site-navigation comment-navigation">

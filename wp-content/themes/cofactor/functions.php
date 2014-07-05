@@ -22,7 +22,6 @@ add_action( 'tgmpa_register', 'register_required_plugins' );
 /****************************************
 Misc Theme Functions
 *****************************************/
-
 /**
  * Hide ACF menu item from the admin menu
  */
@@ -32,7 +31,7 @@ function remove_acf_menu()
  
     // provide a list of usernames who can edit custom field definitions here
     $admins = array( 
-        'annasharman'
+        'anna'
     );
  
     // get the current user
@@ -47,6 +46,23 @@ function remove_acf_menu()
 }
  
 add_action( 'admin_menu', 'remove_acf_menu', 999 );
+
+// truncate function
+function truncate($string, $limit, $break=" ", $pad="...")
+{
+	// Remove any formatting first
+	$string = strip_tags($string);
+	if(strlen($string) <= $limit) return $string;
+	if(false !== ($breakpoint = strpos($string, $break, $limit)))
+	{
+		if($breakpoint < strlen($string) - 1)
+		{
+			$string = substr($string, 0, $breakpoint) . $pad;
+		}
+	}
+	return $string;
+}
+
 
 /**
  * Define custom post type capabilities for use with Members

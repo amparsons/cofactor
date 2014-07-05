@@ -16,8 +16,15 @@ get_header(); ?>
         <div class="wrapper">
         
         	<div class="content__box content__box--removebottommargin">
-				<?php the_content(); ?>
-              
+				
+				<section class="page__section">
+					<?php the_content(); ?>
+               </section>
+                
+                <section class="page__section page__section--remove-border page__section--bottom-margin">
+                	<h2><?php the_field('list_one_title'); ?></h2>
+                </section>
+             
               <div class="col col--first">
               		<?php if( get_field('content_box_one_title') ): ?><h2 class="coltwo"><?php the_field('content_box_one_title'); ?></h2><?php endif; ?>
                   <?php the_field('content_area_one'); ?>  

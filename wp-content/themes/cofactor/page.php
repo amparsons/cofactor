@@ -1,4 +1,8 @@
-<?php get_header(); ?>
+<?php 
+	/*
+		Template Name: Default page style
+	*/
+get_header(); ?>
 
 	<section id="main" role="main">
 
@@ -10,14 +14,17 @@
         	</div>	
 		</div>
         <div class="wrapper">
-        	<div class="content__box content__box--large">
+        	<div class="content__box">
 				<?php 
                 if ( has_post_thumbnail() ) {
-                	the_post_thumbnail('featuredimg', array('class' => 'feature'));
+                	the_post_thumbnail('full', array('class' => 'feature'));
                 } 
                 ?>
 				<?php the_content(); ?>
         	</div>
+          <section class="page__section page__section--top--border">
+				<?php the_field('editor'); ?>
+        	</section>
         </div>
 		<?php endwhile; ?>
 

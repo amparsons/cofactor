@@ -2,8 +2,6 @@
      	<div class="wrapper">
             <div class="footer__col">
 				<h1>Latest from Twitter</h1>
-<<<<<<< HEAD
-<<<<<<< HEAD
               <?php
 				require_once('Creare_Twitter.php');
 				
@@ -46,38 +44,22 @@
 				
 				foreach($tweets as $tweet){
 				?>
-                  <h2><?php echo $tweet['time']; ?></h2>
                   <p><?php echo $tweet['tweet']; ?></p>
               <?php } ?>  
             	<a class="colone bottom" href="https://twitter.com/cofactorsci" target="_blank">SEE ALL TWEETS <span>+</span></a>
 				<a class="follow" href="https://twitter.com/cofactorsci" target="_blank">FOLLOW <span>+</span></a>
-=======
-=======
->>>>>>> FETCH_HEAD
-				<h2>3 days ago</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.</p>
-            	<a class="colone bottom" href="#">SEE ALL TWEETS <span>+</span></a>
-				<a class="follow" href="#">FOLLOW <span>+</span></a>
-<<<<<<< HEAD
->>>>>>> FETCH_HEAD
-=======
->>>>>>> FETCH_HEAD
             </div>
             <div class="footer__col footer__col--middle">
-            	<a href="#">
-					<h1>Latest from the blog</h1>
-					<h2>3 days ago</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. <span>READ MORE <strong>+</strong></span></p>
-                </a>
-                <a class="coltwo bottom" href="#">SEE MORE POSTS <span>+</span></a>
+					<h1>Journals blog</h1>
+					<p>Read Anna Sharman's blog at <a href="http://sharmanedit.wordpress.com" target="_blank">sharmanedit.wordpress.com</a>. There are regular posts about the policies, processes and speeds of journals and about changes in scientific publishing.</span></p>
+                <a class="coltwo bottom" href=" http://sharmanedit.wordpress.com" target="_blank">READ ALL BLOG POSTS <span>+</span></a>
             </div>
             <div class="footer__col">
                 <h1>Quicklinks</h1>
-                <h2>A quicker way to navigate the site</h2>
-<<<<<<< HEAD
-<<<<<<< HEAD
                 <div class="contact__details contact__details--desktop">
-                	<?php if( get_field('phone_number', 5) ): ?><p>Or get in touch<br>and call me on:<br><span><?php the_field('phone_number', 5); ?></span></p><?php endif; ?>
+                	<?php if( get_field('phone_number', 5) ): ?><p>Call us:<br><span><?php the_field('phone_number', 5); ?></span></p><?php endif; ?>
+  
+                  <p>Email:<br><?php if( get_field('email_address', 5) ): ?><a class="social__media--email" href="mailto:<?php the_field('email_address', 5); ?>" target="_blank"><strong><?php the_field('email_address', 5); ?></strong></a><?php endif; ?></p>
                 </div>
                 <?php
 					  wp_nav_menu(
@@ -93,31 +75,11 @@
 					<?php if( get_field('twitter_link', 5) ): ?><li><a class="social__media--twitter" href="<?php the_field('twitter_link', 5); ?>"></a></li><?php endif; ?>
                     <?php if( get_field('google_plus_link', 5) ): ?><li><a class="social__media--google" href="<?php the_field('google_plus_link', 5); ?>"></a></li><?php endif; ?>
                 </ul>
-               
-=======
-=======
->>>>>>> FETCH_HEAD
-                <div class="contact__details">
-                	<p>Or get in touch<br>and call me on:<br><span>07982 722305</span></p>
+               <div class="contact__details contact__details--mobile">
+                	<?php if( get_field('phone_number', 5) ): ?><p>Or Call:<br><span><?php the_field('phone_number', 5); ?></span></p><?php endif; ?>
+   
+                  <p>Email:<br><?php if( get_field('email_address', 5) ): ?><a class="social__media--email" href="mailto:<?php the_field('email_address', 5); ?>" target="_blank"><strong><?php the_field('email_address', 5); ?></strong></a><?php endif; ?></p>
                 </div>
-                <ul>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Workshops</a></li>
-                    <li><a href="#">Editorial Help</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">Pay Via Paypal</a></li>
-                </ul>
-                 <ul class="social__media--footer">
-                    <li><a class="social__media--facebook" href="#"></a></li>
-                    <li><a class="social__media--twitter" href="#"></a></li>
-                    <li><a class="social__media--linkedin" href="#"></a></li>
-                    <li><a class="social__media--google" href="#"></a></li>
-                </ul>
-<<<<<<< HEAD
->>>>>>> FETCH_HEAD
-=======
->>>>>>> FETCH_HEAD
             </div>
         </div>    
     </footer>
@@ -134,7 +96,17 @@
         </div>
     </div>
 
-  <?php wp_footer(); ?>
-
+  
+	<script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    
+      ga('create', 'UA-51692986-1', 'cofactorscience.com');
+      ga('send', 'pageview');
+    
+    </script>
+    <?php wp_footer(); ?>
 </body>
 </html>

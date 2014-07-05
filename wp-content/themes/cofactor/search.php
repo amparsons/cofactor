@@ -1,41 +1,35 @@
 <?php get_header(); ?>
 
-	<section id="main" role="main">
+	<section id="main" class="blog-posts" role="main">
 
-		<?php if ( have_posts() ) : ?>
-
-			<h1>Search Results</h1>
-
-			<?php get_template_part( 'templates/partials/inc', 'nav' ); ?>
-
-			<?php while ( have_posts() ) : the_post(); ?>
-
-				<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
-
-					<h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
-
-					<?php get_template_part( 'templates/partials/inc', 'meta' ); ?>
-
-					<div class="entry">
-
-						<?php the_excerpt(); ?>
-
-					</div>
-
-				</article>
-
-			<?php endwhile; ?>
-
-			<?php get_template_part( 'templates/partials/inc', 'nav' ); ?>
-
-		<?php else : ?>
-
-			<h1>No posts found.</h1>
-
-		<?php endif; ?>
+        <div class="title__box">
+        	<div class="wrapper">
+        		<h1>Blog</h1>
+        	</div>	
+		</div>
+        
+        <div class="wrapper">
+			<div class="posts">
+				<?php if ( have_posts() ) : ?>
+                <h1 class="cattitle"><?php printf( __( 'Search Results for: %s', 'cofactor' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
+            	<?php while ( have_posts() ) : the_post(); ?>
+                <article>
+                	<a href="<?php echo get_permalink(); ?>">
+                    	<img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/post-thumb.jpg" alt=""/>
+						<h1><?php echo the_title(); ?></h1>
+                    	<p class="date"><?php the_time('jS M Y'); ?></p>
+                    	<p><?php echo truncate($post->post_content, 180); ?> Read more</p>
+                		<p class="comments"><?php comments_number( '(0) comments', '(1) comment', '(%) comments' ); ?></p>
+                    </a>
+                </article>
+                <?php endwhile; ?>
+				<?php else : ?>
+				<h1>No posts found.</h1>
+			<?php endif; ?>
+          	</div>
+            <?php get_sidebar(); ?>
+        </div>
 
 	</section> <!-- /#main -->
-
-<?php get_sidebar(); ?>
 
 <?php get_footer(); ?>

@@ -1,4 +1,9 @@
-<?php get_header(); ?>
+<?php 
+/*
+Template Name: Journal Selector Tool
+*/
+
+get_header(); ?>
 
 	<section id="main" role="main">
 
@@ -18,6 +23,5 @@
 
 	</section> <!-- /#main -->
 
-<?php get_sidebar(); ?>
 
 <?php get_footer(); ?>

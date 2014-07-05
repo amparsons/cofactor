@@ -15,7 +15,7 @@ get_header(); ?>
 		</div>
         <div class="wrapper">
         
-        	<div class="content__box content__box--large content__box--removebottommargin">
+        	<div class="content__box content__box--large content__box--removebottommargin editor--styling">
 				<?php the_content(); ?>
               <?php if( have_rows('add_steps') ): ?>
               <ul class="steps">

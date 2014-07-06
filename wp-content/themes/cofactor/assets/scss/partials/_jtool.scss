@@ -1,0 +1,96 @@
+h1.green_header {
+	width:100%;
+	color:#fff;
+	padding:em(5) em(15);
+	text-align:left;
+	background:$colone;
+}
+ul.jlinks {
+	margin:0 0 em(30) 0;
+	padding:0;
+	list-style-type:none;
+	li {
+		a {
+			font-size:em(21);
+			color:$coltwo;
+			text-decoration:underline;
+		}
+	}
+}
+.accordion h3 {
+	width:100%;
+	padding:em(5) em(15);
+	display: block;
+	clear: both;
+	color:#fff;
+	text-align:left;
+	font-size:em(24);
+	padding-left:em(40);
+	margin-bottom:em(7);
+	background:$colone url(#{$assetPath}/plus.svg) no-repeat 15px center;
+	background-size:23px 23px;
+	cursor:pointer;
+}
+.accordion h3.ui-state-active {
+	background:$colone url(#{$assetPath}/minus.svg) no-repeat 15px center;
+	background-size:23px 23px;
+}
+.accordion div {
+	width:100%;
+	display:inline-block;
+	
+}
+.accordion .col,
+.accordion .col3,
+.accordion .col6 {
+	float:left;
+	width:100%;
+	min-height:200px;
+	margin:0;
+	padding:0;
+	@include bp(tablet) {
+		width:25%;		
+	}
+	h4 {
+		color:$coltwo;
+		text-align:left;
+		font-size:em(16);
+	}
+	div {
+		label {
+			float:left;
+			font-size:15px;
+			line-height:20px;
+			margin-left:15px;
+	
+		}
+		input {
+			float:left;
+			width:auto !important;
+			min-height:20px !important;
+			display:block;
+			
+		}
+	}
+}
+.accordion .col3 {
+	float:left;
+	width:100%;
+	min-height:200px;
+	margin:0 0 em(24) 0;
+	padding:0;
+	@include bp(tablet) {
+		width:33.33333333333333%;		
+	}
+}
+.accordion .col6 {
+	float:left;
+	width:100%;
+	min-height:200px;
+	margin:0;
+	padding:0;
+	@include bp(tablet) {
+		width:16.66666666666667%;		
+	}
+}
+

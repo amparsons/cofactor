@@ -29,6 +29,7 @@
 					
 				$twitter->cachefile = $_SERVER['DOCUMENT_ROOT']."/twitter/twitter.txt";
 				$twitter->tags = true;
+				$twitter->attags = false; 
 				
 				/* You can optionally change the following public properties
 				

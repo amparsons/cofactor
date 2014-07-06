@@ -474,7 +474,12 @@ section#main .title__box {
 		text-align:center;
 	}
 }
-
+.content__box.selectortool {
+	width:100%;
+	h1 {
+		text-align:left;
+	}
+}
 .content__box.editor--styling {
 	h1 {
 		color:$colone;
